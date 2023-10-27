@@ -1,0 +1,78 @@
+/* customers   Клиенты */
+.customers-list {
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      }
+}
+
+.customers-list .customer {
+
+
+    height: 90px;
+    margin: 0;
+    padding-bottom: 0px;
+
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    //   border: solid 1px red;
+
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 2 * 2 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 3 * 15px) / 3);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 6 * 15px) / 6);
+    margin: 15px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 15px;
+    }
+  }    
+}
+
+.customers-list .customer:hover,
+.customers-list .customer:focus {
+
+    border: 1px solid var(--accent);
+    fill: var(--accent);
+
+}
+
+.customer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    height: 90px;
+
+    fill: var(--text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    fill: var(--accent);
+}    
+}
+
+
+.customer-icon {
+    width: 50%;
+    height: 55%;
+
+}

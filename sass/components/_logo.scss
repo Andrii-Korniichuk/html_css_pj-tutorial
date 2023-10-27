@@ -1,0 +1,20 @@
+/* LOGO */
+
+.logo {
+  display: inline-block;
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 117.384615%;
+  /* 30.52/26 */
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-align: left;
+
+  color: var(--accent);
+
+  & span {
+    color: var(--title-text-color);
+  }
+}
